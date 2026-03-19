@@ -16,14 +16,23 @@
     <header>
         <nav>
             <div class="left header-profile">
-                <img src="picture.png" class="profile-img">
+                <img src="images/picture.png" class="profile-img">
                 <span>Shahryar's Portfolio</span>
             </div>
-            <div class="right">
+
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+
+            <div class="right" id="nav-links">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#certs">Certifications</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
                     <li><a href="#experience">Experience</a></li>
+                    <li><a href="#certs">Certifications</a></li>
+                    <li><a href="#volunteering">Volunteering</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -53,7 +62,7 @@
             </div>
 
             <div class="rightSection">
-                <img src="bg.png" alt="">
+                <img src="images/bg.png" alt="">
             </div>
         </section>
 
@@ -77,33 +86,47 @@
 
             <div class="experience-container">
 
-                <a href="cert1.pdf" target="_blank" rel="noopener noreferrer" class="experience-link">
-                    <div class="experience-card">
-                        <h3>Student Trainee</h3>
-                        <span class="company">Electrical Engineering Department - Student body</span>
-                        <span class="duration">Jan 2025 - Present</span>
-                        <span class="type">On-site</span>
-                        <p>
-                            Worked on circuit design, PCB layout, and embedded systems.
-                        </p>
-                    </div>
-                </a>
+                <div class="experience-card">
 
-                <a href="cert2.pdf" target="_blank" rel="noopener noreferrer" class="experience-link">
-                    <div class="experience-card">
-                        <h3>Cybersecurity Intern</h3>
-                        <span class="company">Certura </span>
-                        <span class="duration">July 2025 - Aug 2025</span>
-                        <span class="type">Remote </span>
-                        <p>
-                        <h4>Tasks: </h4>
+                    <h3>Student Trainee</h3>
+                    <span class="company">Electrical Department Student Body </span>
+                    <span class="duration">Oct 2025 - Present</span>
+
+                    <p class="desc">
+                        Part of the technical wing, acquiring practical knowledge in MCUs, PCB design, and building
+                        robots.
+                    </p>
+
+                    <span class="read-more">Read More</span>
+
+                    <!-- <a href="cert.pdf" target="_blank" class="exp-btn">
+                        View Certificate
+                    </a> -->
+
+                </div>
+
+                <div class="experience-card">
+
+                    <h3>Cybersecurity Intern</h3>
+                    <span class="company">Certura</span>
+                    <span class="duration">July 2025</span>
+
+                    <p class="desc">
+                        As a part of my internship project I worked on the following tasks: <br>
                         1. Writing the python script for a keylogger and testing it in a safe virutal lab environment
                         <br>
                         2. Simulating a MITM attack using a virtual network of different VMs <br>
                         3. Writing a python program to hash passwords (entered passwords)
-                        </p>
-                    </div>
-                </a>
+                    </p>
+
+                    <span class="read-more">Read More</span>
+
+                    <a href="https://nustedupk0-my.sharepoint.com/:i:/g/personal/mameer_ee46ceme_student_nust_edu_pk/IQBrljM8yIl7Qary6mcemrw9AborsXYJSLLjJuOyB51-IVA?e=3VteLH"
+                        target="_blank" class="exp-btn">
+                        View Certificate
+                    </a>
+
+                </div>
 
             </div>
         </section>
@@ -195,9 +218,130 @@
 
             </div>
         </section>
-
         <hr>
 
+        <section class="section" id="education">
+            <h1>Education</h1>
+
+            <div class="education-container">
+
+                <div class="education-card">
+                    <h3>BS Electrical Engineering</h3>
+                    <span class="edu-place">NUST EME College, Islamabad</span>
+                    <span class="edu-duration">2024 - 2028</span>
+                    <span class="edu-grade">CGPA: 3.7 / 4.0</span>
+                    <p>Completing my undergraduate studies in Electrical Engineering.</p>
+                </div>
+
+                <div class="education-card">
+                    <h3>FSc Pre-Engineering</h3>
+                    <span class="edu-place">Pakistan International School Jeddah</span>
+                    <span class="edu-duration">2021 - 2023</span>
+                    <span class="edu-grade">Grade: A+</span>
+                    <p>HSSC done with majors in Physics, Chemistry and Mathematics.</p>
+                </div>
+
+            </div>
+        </section>
+        <hr>
+        <hr>
+
+        <section class="section" id="projects">
+            <h1>Projects</h1>
+
+            <div class="project-container">
+
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <h3>Dual channel DC power supply</h3>
+                    <span class="project-org">Third Semester Project</span>
+
+                    <p class="project-desc">
+                        Designed and implemented a dual-channel linear DC power supply as part of the Electronic Devices
+                        & Circuits course at NUST CEME, including the entire workflow from simulation to PCB design and
+                        hardware testing.
+
+                        The DC power supply provides a variable voltage between 2V and 24V, along with a regulated 5V DC
+                        supply, with stable performance, including regulation of 5% and ripple of 10%, and efficiency of
+                        73%.
+
+                        This project provided a real-world application of AC-DC conversion, voltage regulation, and
+                        thermal management.
+                    </p>
+
+                    <span class="read-more">Read More</span>
+
+                    <div class="project-buttons">
+                        <!-- <a href="project1.jpg" target="_blank" class="proj-btn">View Image/Video</a> -->
+                        <a href="https://github.com/msameer901/3rd_Semester_Projects/tree/72c04d608b65f34b9c0d1c1c8140503f3cd33182/EDC"
+                            target="_blank" class="proj-btn-outline">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <h3>4-BIT Arithmetic Logic Unit</h3>
+                    <span class="project-org">Third Semester Project</span>
+
+                    <p class="project-desc">
+                        Designed and implemented a fully functional 4-bit Arithmetic Logic Unit (ALU) for a Digital
+                        Logic Design project, translating fundamental logic gates into a complete computational unit.
+
+                        The system performs arithmetic and logical operations using multiplexed control, with a modular
+                        and scalable architecture validated through simulation and hardware testing.
+
+                        This project emphasized practical hardware design, IC-level debugging, and system integration,
+                        reinforcing core concepts in digital logic and reliable circuit implementation.
+                    </p>
+
+                    <span class="read-more">Read More</span>
+
+                    <div class="project-buttons">
+                        <a href="https://nustedupk0-my.sharepoint.com/:f:/g/personal/mameer_ee46ceme_student_nust_edu_pk/IgAL9SF2ZWZzS6RzQHD869SWAUTVvChQkrNJDNv8k6ojDcA?e=olSdDf"
+                            target="_blank" class="proj-btn">View Gallery</a>
+                        <a href="https://github.com/msameer901/3rd_Semester_Projects/tree/72c04d608b65f34b9c0d1c1c8140503f3cd33182/DLD"
+                            target="_blank" class="proj-btn-outline">GitHub</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <hr>
+
+        <section class="section" id="volunteering">
+            <h1>Volunteering</h1>
+
+            <div class="volunteer-container">
+
+                <div class="volunteer-card">
+
+                    <h3>Student Volunteer</h3>
+                    <span class="vol-company">AlKhidmat Welfare Organization</span>
+                    <span class="vol-duration">June 2025 - Aug 2025</span>
+
+                    <p class="desc">
+                        Alkhidmat Foundation offers a wide range of volunteer tasks specifically designed for students
+                        to gain hands-on experience in social work, leadership, and community service. These tasks are
+                        designed to be flexible, allowing students to contribute to various causes while developing
+                        professional skills.
+                    </p>
+
+                    <!-- Read more BELOW text -->
+                    <span class="read-more">Read More</span>
+
+                    <!-- Button separate -->
+                    <div class="vol-btn-container">
+                        <a href="https://nustedupk0-my.sharepoint.com/:b:/g/personal/mameer_ee46ceme_student_nust_edu_pk/IQBrHwxam-q3T7T2muai9HIDAV3xGfSA1cYfkpNeVj2vlQY?e=jxcbOa"
+                            target="_blank" class="vol-btn">
+                            View Certificate
+                        </a>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
         <!-- SOFTWARE -->
         <section class="section">
             <h1>Softwares I've Used</h1>
@@ -205,19 +349,19 @@
             <div class="software-container">
 
                 <div class="software-card">
-                    <img src="proteus.jpg">
+                    <img src="images/proteus.jpg">
                     <h3>Proteus 8</h3>
                     <p>Description here...</p>
                 </div>
 
                 <div class="software-card">
-                    <img src="matlab.jpg">
+                    <img src="images/matlab.jpg">
                     <h3>Matlab R2020</h3>
                     <p>Description here...</p>
                 </div>
 
                 <div class="software-card">
-                    <img src="autocad.jpg">
+                    <img src="images/autocad.jpg">
                     <h3>AutoCAD Electrical 2026 </h3>
                     <p>Description here...</p>
                 </div>
@@ -253,18 +397,23 @@
             <div>
                 <h3>Links</h3>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <!-- <li><a href="#contact">P</a></li> -->
                 </ul>
             </div>
 
             <div>
                 <h3>Social</h3>
                 <ul>
-                    <li><a href="https://www.instagram.com/unknuser11/">Instagram</a></li>
-                    <li><a href="https://www.facebook.com/muhammad.shahryar.ameer">Facebook</a></li>
-                    <li><a href="https://www.linkedin.com/in/muhammad-shahryar-ameer-667783236/">LinkedIn</a></li>
-                    <li><a href="mailto:muhammadshahryarameer2005@gmail.com">Email</a></li>
+                    <li><a href="https://www.instagram.com/unknuser11/" target="_blank"
+                            rel="noopener noreferrer">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/muhammad.shahryar.ameer" target="_blank"
+                            rel="noopener noreferrer">Facebook</a></li>
+                    <li><a href="https://www.linkedin.com/in/muhammad-shahryar-ameer-667783236/" target="_blank"
+                            rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="mailto:muhammadshahryarameer2005@gmail.com" target="_blank"
+                            rel="noopener noreferrer">Email</a></li>
                 </ul>
             </div>
 

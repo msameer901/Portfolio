@@ -48,7 +48,77 @@ nav ul li a {
 nav ul li a:hover {
     color: rgb(167, 90, 239);
 }
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+/* Description styling */
+.desc {
+    font-size: 14px;
+    color: #d1d5db;
+    line-height: 1.6;
+    position: relative;
+    max-height: 80px;          /* collapsed height */
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
 
+/* Fade effect */
+.desc::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to bottom, transparent, #111132);
+}
+
+/* Expanded state */
+.desc.expanded {
+    max-height: 500px;
+}
+
+.desc.expanded::after {
+    display: none;
+}
+
+/* Read more button */
+.read-more {
+    font-size: 12px;
+    color: #c084fc;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 5px;
+    transition: 0.3s;
+}
+
+.read-more:hover {
+    color: white;
+}
+/* Mobile */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .right {
+        display: none;
+        width: 100%;
+    }
+
+    .right ul {
+        flex-direction: column;
+        text-align: center;
+        background: #111132;
+    }
+
+    .right.active {
+        display: block;
+    }
+}
 /* HERO */
 .firstSection {
     display: flex;
@@ -182,12 +252,44 @@ nav ul li a:hover {
     margin: 15px;
     width: 250px;
     border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
 }
 
 .software-card img {
     width: 100%;
+    height: 150px;         /* fixed height */
+    object-fit: contain;   /* keeps image clean */
+    background: #0a0a2a;   /* nice background */
+    padding: 10px;
+    border-radius: 8px;
+}
+.software-card:hover {
+    transform: translateY(-5px);
+}
+/* Read more spacing */
+.read-more {
+    display: block;          /* forces new line */
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
+/* Button container */
+.vol-btn-container {
+    margin-top: 10px;
+}
+
+/* Experience button */
+.exp-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 7px 12px;
+    background: rgb(167, 90, 239);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 13px;
+}
 /* CONTACT */
 form {
     display: flex;
@@ -309,7 +411,210 @@ footer {
     font-size: 13px;
     color: gray;
 }
+/* Education sec */
+.education-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
+.education-card {
+    background: #111132;
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+}
+.edu-place {
+    display: block;
+    color: #c084fc;
+    font-size: 14px;
+}
+.edu-grade {
+    display: block;
+    font-size: 13px;
+    color: #90cdf4; /* soft blue (looks clean with purple theme) */
+    margin-bottom: 8px;
+}
+.edu-duration,
+.edu-grade {
+    display: inline-block;
+    font-size: 13px;
+    color: gray;
+    margin-right: 10px;
+}
+.edu-place {
+    display: block;
+    color: #c084fc;
+    font-size: 14px;
+}
+
+.edu-duration {
+    display: block;
+    color: gray;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+/* Projects */
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    background: #111132;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: left;
+    transition: 0.3s;
+    backdrop-filter: blur(10px);  /* glass effect */
+}
+.read-more {
+    font-size: 12px;
+    color: #c084fc;
+    cursor: pointer;
+}
+.project-desc {
+    font-size: 14px;
+    color: #d1d5db;
+    line-height: 1.6;
+    margin-top: 10px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* When expanded */
+.project-desc.expanded {
+    -webkit-line-clamp: unset;
+    overflow: visible;
+}
+.project-card p::first-line {
+    font-weight: 500;
+}
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 15px rgba(167, 90, 239, 0.4);
+}
+
+.project-card h3 {
+    color: rgb(167, 90, 239);
+    margin-bottom: 5px;
+}
+
+.project-org {
+    display: block;
+    font-size: 13px;
+    color: #c084fc;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Buttons */
+.project-buttons {
+    margin-top: 15px;
+}
+
+.proj-btn,
+.proj-btn-outline {
+    display: inline-block;
+    padding: 7px 12px;
+    margin-right: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.proj-btn {
+    background: rgb(167, 90, 239);
+    color: white;
+}
+
+.proj-btn:hover {
+    background: #c084fc;
+}
+
+.proj-btn-outline {
+    border: 1px solid rgb(167, 90, 239);
+    color: white;
+}
+
+.proj-btn-outline:hover {
+    background: rgb(167, 90, 239);
+}
+@media (max-width: 768px) {
+    .project-card {
+        width: 90%;
+    }
+}
+/* Volunteering */
+.volunteer-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.volunteer-card {
+    background: #111132;
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.vol-date {
+    display: block;
+    color: gray;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+/* Button styling */
+.vol-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 7px 12px;
+    background: rgb(167, 90, 239);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.vol-btn:hover {
+    background: #c084fc;
+    transform: translateY(-2px);
+}
+.vol-company {
+    display: block;
+    font-size: 14px;
+    color: #c084fc;  /* lavender */
+    margin-bottom: 3px;
+}
+
+.vol-duration {
+    display: block;
+    font-size: 13px;
+    color: gray;
+    margin-bottom: 10px;
+}
 .cert-btn {
     padding: 8px 15px;
     background: rgb(167, 90, 239);
@@ -335,4 +640,22 @@ footer {
     color: white;
     background: rgb(167, 90, 239);
     transform: translateX(5px);
+}
+.footer-container ul {
+    list-style: none;   /* removes bullets */
+    padding: 0;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
