@@ -20,19 +20,32 @@
                 <span>Shahryar's Portfolio</span>
             </div>
 
-            <div class="menu-toggle" id="menu-toggle">
-                ☰
-            </div>
+            <!-- Desktop nav links -->
+            <ul class="desktop-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certs">Licenses</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#volunteering">Volunteering</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-            <div class="right" id="nav-links">
+            <!-- Hamburger icon visible on mobile only -->
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+
+            <!-- Full-screen overlay mobile menu -->
+            <div class="mobile-menu" id="mobile-menu">
+                <span class="close-btn" id="close-btn">✖</span>
                 <ul>
-                    <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#experience">Experience</a></li>
-                    <li><a href="#certs">Certifications</a></li>
-                    <li><a href="#volunteering">Volunteering</a></li>
+                    <li><a href="#certs">Licenses</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#volunteering">Volunteering</a></li>
+                    <li><a href="#awards">Awards</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -47,7 +60,6 @@
                 Hi! My name is <span class="purple">Shahryar</span>
                 <div>And I am a passionate</div>
 
-                <!-- Wrapper added -->
                 <div class="typed-wrapper">
                     <span id="element" class="typed-text"></span>
                 </div>
@@ -87,30 +99,20 @@
             <div class="experience-container">
 
                 <div class="experience-card">
-
                     <h3>Student Trainee</h3>
                     <span class="company">Electrical Department Student Body </span>
                     <span class="duration">Oct 2025 - Present</span>
-
                     <p class="desc">
                         Part of the technical wing, acquiring practical knowledge in MCUs, PCB design, and building
                         robots.
                     </p>
-
                     <span class="read-more">Read More</span>
-
-                    <!-- <a href="cert.pdf" target="_blank" class="exp-btn">
-                        View Certificate
-                    </a> -->
-
                 </div>
 
                 <div class="experience-card">
-
                     <h3>Cybersecurity Intern</h3>
                     <span class="company">Certura</span>
                     <span class="duration">July 2025</span>
-
                     <p class="desc">
                         As a part of my internship project I worked on the following tasks: <br>
                         1. Writing the python script for a keylogger and testing it in a safe virutal lab environment
@@ -118,14 +120,11 @@
                         2. Simulating a MITM attack using a virtual network of different VMs <br>
                         3. Writing a python program to hash passwords (entered passwords)
                     </p>
-
                     <span class="read-more">Read More</span>
-
                     <a href="https://nustedupk0-my.sharepoint.com/:i:/g/personal/mameer_ee46ceme_student_nust_edu_pk/IQBrljM8yIl7Qary6mcemrw9AborsXYJSLLjJuOyB51-IVA?e=3VteLH"
                         target="_blank" class="exp-btn">
                         View Certificate
                     </a>
-
                 </div>
 
             </div>
@@ -138,7 +137,6 @@
             <h1>Licenses & Certifications</h1>
 
             <div class="cert-container">
-
                 <div class="cert-card">
                     <div>
                         <h3>C Essentials 1</h3>
@@ -155,18 +153,14 @@
                     <a href="https://nustedupk0-my.sharepoint.com/:b:/g/personal/mameer_ee46ceme_student_nust_edu_pk/IQBMwdM8jk40SrN_85ReytB2AXMDmSMt-e2Jx6rUl_nFTO4?e=zrv1bg"
                         target="_blank" rel="noopener noreferrer" class="cert-btn">View</a>
                 </div>
-
                 <div class="cert-card">
                     <div>
                         <h3>Introduction to Programming with MATLAB</h3>
-                        <p>Issued by Coursera
-
-                        </p>
+                        <p>Issued by Coursera</p>
                     </div>
                     <a href="https://www.coursera.org/account/accomplishments/verify/MBU060B5SLI8" target="_blank"
                         rel="noopener noreferrer" class="cert-btn">View</a>
                 </div>
-
                 <div class="cert-card">
                     <div>
                         <h3>PCB Design in Proteus</h3>
@@ -215,7 +209,6 @@
                     <a href="https://www.coursera.org/account/accomplishments/verify/KR7PQTMKUK80" target="_blank"
                         rel="noopener noreferrer" class="cert-btn">View</a>
                 </div>
-
             </div>
         </section>
         <hr>
@@ -224,7 +217,6 @@
             <h1>Education</h1>
 
             <div class="education-container">
-
                 <div class="education-card">
                     <h3>BS Electrical Engineering</h3>
                     <span class="edu-place">NUST EME College, Islamabad</span>
@@ -232,7 +224,6 @@
                     <span class="edu-grade">CGPA: 3.7 / 4.0</span>
                     <p>Completing my undergraduate studies in Electrical Engineering.</p>
                 </div>
-
                 <div class="education-card">
                     <h3>FSc Pre-Engineering</h3>
                     <span class="edu-place">Pakistan International School Jeddah</span>
@@ -240,10 +231,8 @@
                     <span class="edu-grade">Grade: A+</span>
                     <p>HSSC done with majors in Physics, Chemistry and Mathematics.</p>
                 </div>
-
             </div>
         </section>
-        <hr>
         <hr>
 
         <section class="section" id="projects">
@@ -255,7 +244,6 @@
                 <div class="project-card">
                     <h3>Dual channel DC power supply</h3>
                     <span class="project-org">Third Semester Project</span>
-
                     <p class="project-desc">
                         Designed and implemented a dual-channel linear DC power supply as part of the Electronic Devices
                         & Circuits course at NUST CEME, including the entire workflow from simulation to PCB design and
@@ -268,11 +256,8 @@
                         This project provided a real-world application of AC-DC conversion, voltage regulation, and
                         thermal management.
                     </p>
-
                     <span class="read-more">Read More</span>
-
                     <div class="project-buttons">
-                        <!-- <a href="project1.jpg" target="_blank" class="proj-btn">View Image/Video</a> -->
                         <a href="https://github.com/msameer901/3rd_Semester_Projects/tree/72c04d608b65f34b9c0d1c1c8140503f3cd33182/EDC"
                             target="_blank" class="proj-btn-outline">GitHub</a>
                     </div>
@@ -282,7 +267,6 @@
                 <div class="project-card">
                     <h3>4-BIT Arithmetic Logic Unit</h3>
                     <span class="project-org">Third Semester Project</span>
-
                     <p class="project-desc">
                         Designed and implemented a fully functional 4-bit Arithmetic Logic Unit (ALU) for a Digital
                         Logic Design project, translating fundamental logic gates into a complete computational unit.
@@ -293,9 +277,7 @@
                         This project emphasized practical hardware design, IC-level debugging, and system integration,
                         reinforcing core concepts in digital logic and reliable circuit implementation.
                     </p>
-
                     <span class="read-more">Read More</span>
-
                     <div class="project-buttons">
                         <a href="https://nustedupk0-my.sharepoint.com/:f:/g/personal/mameer_ee46ceme_student_nust_edu_pk/IgAL9SF2ZWZzS6RzQHD869SWAUTVvChQkrNJDNv8k6ojDcA?e=olSdDf"
                             target="_blank" class="proj-btn">View Gallery</a>
@@ -312,60 +294,91 @@
             <h1>Volunteering</h1>
 
             <div class="volunteer-container">
-
                 <div class="volunteer-card">
-
                     <h3>Student Volunteer</h3>
                     <span class="vol-company">AlKhidmat Welfare Organization</span>
                     <span class="vol-duration">June 2025 - Aug 2025</span>
-
                     <p class="desc">
                         Alkhidmat Foundation offers a wide range of volunteer tasks specifically designed for students
                         to gain hands-on experience in social work, leadership, and community service. These tasks are
                         designed to be flexible, allowing students to contribute to various causes while developing
                         professional skills.
                     </p>
-
-                    <!-- Read more BELOW text -->
                     <span class="read-more">Read More</span>
-
-                    <!-- Button separate -->
                     <div class="vol-btn-container">
                         <a href="https://nustedupk0-my.sharepoint.com/:b:/g/personal/mameer_ee46ceme_student_nust_edu_pk/IQBrHwxam-q3T7T2muai9HIDAV3xGfSA1cYfkpNeVj2vlQY?e=jxcbOa"
                             target="_blank" class="vol-btn">
                             View Certificate
                         </a>
                     </div>
+                </div>
+            </div>
+        </section>
 
+        <hr>
+
+        <!-- AWARDS -->
+        <section class="section" id="awards">
+            <h1>Awards & Honours</h1>
+
+            <div class="awards-container">
+
+                <div class="award-card">
+                    <div class="award-img-wrap">
+                        <img src="images/cgpa award 1.jpeg" class="award-img" alt="CGPA Award">
+                    </div>
+                    <div class="award-content">
+                        <span class="award-org">NUST EME College</span>
+                        <h3>NUST CEME Award for obtaining CGPA &gt;3.50</h3>
+                        <span class="award-year">2025</span>
+                        <a href="https://nustedupk0-my.sharepoint.com/:b:/g/personal/mameer_ee46ceme_student_nust_edu_pk/IQAsdCPC8792TZgFGyxn76zwAe_5i9tx7k458nNofnj6MZg?e=ptGWXQ"
+                            target="_blank" class="award-btn">
+                            View Certificate
+                        </a>
+                    </div>
                 </div>
 
+                <div class="award-card">
+                    <div class="award-img-wrap award-img-placeholder">
+                        <span>🏆</span>
+                    </div>
+                    <div class="award-content">
+                        <span class="award-org">EasyEDA + CEME (NUST)</span>
+                        <h3>PCB Design Competition</h3>
+                        <span class="award-year">2026</span>
+                        <a href="https://nustedupk0-my.sharepoint.com/:b:/g/personal/mameer_ee46ceme_student_nust_edu_pk/IQAiWFoNHVO4Q5uE8gwKhwYBAT8vt_gURy0loPW9Y6fjA4o?e=fD8dod"
+                            target="_blank" class="award-btn">
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
 
             </div>
         </section>
+
+        <hr>
+
         <!-- SOFTWARE -->
         <section class="section">
             <h1>Softwares I've Used</h1>
 
             <div class="software-container">
-
                 <div class="software-card">
                     <img src="images/proteus.jpg">
                     <h3>Proteus 8</h3>
-                    <p>Description here...</p>
+                    <p>Designing complex circuits and simulating</p>
                 </div>
-
                 <div class="software-card">
                     <img src="images/matlab.jpg">
                     <h3>Matlab R2020</h3>
-                    <p>Description here...</p>
+                    <p>Basic know how, data visualization, numerical computing, and performing matrix calculations</p>
                 </div>
-
                 <div class="software-card">
                     <img src="images/autocad.jpg">
-                    <h3>AutoCAD Electrical 2026 </h3>
-                    <p>Description here...</p>
+                    <h3>AutoCAD Electrical 2026</h3>
+                    <p>Designed & created electrical control systems, schematic diagrams, and panel layouts using
+                        specialized drafting tools</p>
                 </div>
-
             </div>
         </section>
 
@@ -381,28 +394,23 @@
                 <textarea placeholder="Your Query" required></textarea>
                 <button type="submit">Send</button>
             </form>
-
         </section>
 
     </main>
 
     <footer>
         <div class="footer-container">
-
             <div>
                 <h2>Shahryar's Portfolio</h2>
                 <p>Electrical Engineering Student & Cybersecurity Enthusiast</p>
             </div>
-
             <div>
                 <h3>Links</h3>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#experience">Experience</a></li>
-                    <!-- <li><a href="#contact">P</a></li> -->
                 </ul>
             </div>
-
             <div>
                 <h3>Social</h3>
                 <ul>
@@ -416,9 +424,7 @@
                             rel="noopener noreferrer">Email</a></li>
                 </ul>
             </div>
-
         </div>
-
         <div class="footer-bottom">
             © 2026 Shahryar | All Rights Reserved
         </div>
